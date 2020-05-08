@@ -17,4 +17,4 @@ const ImageLinkForm = () => {
     );
 }
 
-export default ImageLinkForm
+export default ImageLinkForm;
