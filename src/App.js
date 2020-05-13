@@ -8,6 +8,7 @@ import Rank from './components/Rank/Rank';
 import Signin from './components/Signin/Signin';
 import Register from './components/Register/Register';
 import './App.css';
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const particlesOptions = {
   particles: {
