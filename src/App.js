@@ -91,6 +91,7 @@ class App extends Component {
     fetch('https://powerful-caverns-38731.herokuapp.com/imageurl',{
             method:'post',
             headers:{'Content-Type':'application/json'},
+            credentials:"include",
             body:JSON.stringify({
                 input:this.state.input
             })
@@ -101,6 +102,7 @@ class App extends Component {
           fetch('https://powerful-caverns-38731.herokuapp.com/image',{
             method:'put',
             headers:{'Content-Type':'application/json'},
+            credentials:"include",
             body:JSON.stringify({
                 id:this.state.user.id
             })
