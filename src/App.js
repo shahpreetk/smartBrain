@@ -90,7 +90,7 @@ class App extends Component {
     this.setState({imageUrl: this.state.input});
     fetch('https://powerful-caverns-38731.herokuapp.com/imageurl',{
             method:'post',
-            headers:{'Content-Type':'application/json'},
+            headers:{'Content-Type':'application/json','Access-Control-Allow-Credentials':'true'},
             body:JSON.stringify({
                 input:this.state.input
             })
@@ -100,7 +100,7 @@ class App extends Component {
         if(response){
           fetch('https://powerful-caverns-38731.herokuapp.com/image',{
             method:'put',
-            headers:{'Content-Type':'application/json'},
+            headers:{'Content-Type':'application/json', 'Access-Control-Allow-Credentials':'true'},
             body:JSON.stringify({
                 id:this.state.user.id
             })
